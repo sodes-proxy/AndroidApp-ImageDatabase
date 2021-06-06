@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <EditText
+        android:id="@+id/userEdit"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Introduce Usuario"
+        android:inputType="text"
+        app:layout_constraintVertical_bias="0.585"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/passwordEdit"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/userEdit"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Introduce contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintVertical_bias="0.25"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/passwordEdit"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        android:text="Entrar"
+        android:gravity="center"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

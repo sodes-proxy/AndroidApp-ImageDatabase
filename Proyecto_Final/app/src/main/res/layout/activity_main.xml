@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    app:layout_constraintRight_toRightOf="parent"
+
+    <ImageView
+        android:id="@+id/image_View1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/EditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.585"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/image_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762" />
+
+    <Button
+        android:id="@+id/gallery_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Gallery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762" />
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="286dp"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:gravity="center"
+        android:hint="Introduce el nombre"
+        app:layout_constraintBottom_toBottomOf="@id/gallery_Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.888"
+        />
+
+    <Button
+        android:id="@+id/guardar_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gallery_Button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.518"
+        android:gravity="center"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:foregroundTint="@color/white"
+        android:tint="@color/white"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="?android:attr/actionModeFindDrawable"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

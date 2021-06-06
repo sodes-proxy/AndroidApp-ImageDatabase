@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imgAlumno"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="259dp"
+        android:layout_height="86dp"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@id/imgAlumno"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
